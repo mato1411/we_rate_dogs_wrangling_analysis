@@ -6,7 +6,9 @@ This project was submitted as project "Wrangle and Analyze Data" for Udacity's D
 * [`wrangle_act.ipynb`](wrangle_act.ipynb): code for gathering, assessing, cleaning, analyzing, and visualizing data
 * [`wrangle_act.html`](wrangle_act.html): HMTL version of `wrangle_act.ipynb`
 * [`wrangle_report.html`](wrangle_report.html): documentation for data wrangling steps: gather, assess, and clean
+* [`wrangle_report.ipynb`](wrangle_report.ipynb): source `wrangle_report.html` export
 * [`act_report.html`](act_report.html): documentation of analysis and insights into final data
+* [`act_report.ipynb`](act_report.ipynb): source `act_report.html` export
 * [`twitter_archive_enhanced.csv`](data/twitter_archive_enhanced.csv): file as given
 * [`image_predictions.tsv`](data/image_predictions.tsv): file downloaded programmatically
 * [`tweet_json.txt`](data/tweet_json.txt): file constructed via API
