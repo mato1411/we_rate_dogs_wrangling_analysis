@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>wrangle_report</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=cOuTuUyN5XViFyHIt3s1LqtB91waaeyEGxOh1m6VN4nqj1Izm2NQNCrvPTb5BHSiaua0ttbrbX_7G9fh6avPT6-9jMee32g03Ov5qEacf1ZZzDOL4pueIRPRQYpXaEgu" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>wrangle_report</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=k0ymORnfrq6EhbwoVf7_TGoJikHFfxnpKoFWJ1EDdUrk6dxpvq-mTT1LY4wvzNpF_SttCdO8mEcv6KS-obym9xuWnQGFIOhNn_3KNp8xdbF5LzxL0a2Gg46FFBRtq4Rs" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14314,14 +14314,14 @@ a.anchor-link {
 <h3 id="Quality-Issues">Quality Issues<a class="anchor-link" href="#Quality-Issues">&#182;</a></h3><h4 id="df_archive-table"><code>df_archive</code> table<a class="anchor-link" href="#df_archive-table">&#182;</a></h4><ul>
 <li>Some tweets are retweets and should be dropped, because they might be no original ratings</li>
 <li>Some tweets are replies and should be dropped, because they might be no original ratings (additionally, the columns <code>in_reply_to_status_id</code> and <code>in_reply_to_user_id</code> are <code>float64</code> instead of <code>int64</code> but this extraneous)</li>
-<li>The <code>rating_denominator</code> sometimes does not equals 10</li>
-<li>The <code>rating_numerator</code> sometimes is greater than 20 and sometimes equals 0</li>
+<li>The rating is sometimes incorrect by comparing text to <code>rating_numerator</code> and <code>rating_denominator</code> outliers</li>
+<li>The rating needs to be normalized by <code>rating_numerator</code> divided by <code>rating_denominator</code> due to the outliers</li>
 <li>The columns <code>name</code>, <code>doggo</code>, <code>floofer</code>, <code>pupper</code> and <code>puppo</code> contain the string <code>None</code> instead of <code>np.nan</code> as null value</li>
 <li>The column <code>name</code> contains very likely not real names, i.e. <code>a</code>, <code>by</code>, <code>unacceptable</code>, <code>very</code>, <code>an</code>, <code>my</code> and <code>incredibly</code>.</li>
 <li>The <code>timestamp</code> and <code>retweeted_status_timestamp</code> is represented as string and should be a datetime value (only <code>timestamp</code> requires cleaning, because retweets will not be considered)</li>
 </ul>
 <h4 id="df_img-table"><code>df_img</code> table<a class="anchor-link" href="#df_img-table">&#182;</a></h4><ul>
-<li>For some images the top 3 predications did not identified a dog</li>
+<li>If a dog was detected, then get the dog breed based on the highest confidence prediction</li>
 <li>The confidence of some predicted dog breeds is below 30%</li>
 <li>The predicted dog breed consisting of more than one word for p1 or p2 or p3 are separated by <code>_</code> or <code>-</code> instead of blank. Additionally, the words sometimes do not start capitalized </li>
 </ul>
@@ -14340,6 +14340,20 @@ a.anchor-link {
 <p>The wrangled data provided within the master DataFrame <code>df_archive_clean</code> will be analyzed to produce insights and visualizations that satisfy the project motivation.</p>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 

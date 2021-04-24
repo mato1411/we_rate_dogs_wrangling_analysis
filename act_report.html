@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>act_report</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=jLYOeitqz8ZBf6P3RdIJ8m6PEFstwbIijwDs5ykyN0cJCMtkNd0npX020P71uA7ww6FtXEGWoUreq3qDIXxqzjHzKkf3IzQPvgO7-mkDLgHSuu8rTqQrq7cUnFQb_7jb" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>act_report</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=vg7bx1mCk--QBwR2Py6_1KPqPPljLNQHGWrVl9WhCMaiQkU3fCBIsZmDbsY7CCv8r1pyTuVkq0dxbCyvP3zEG1niCTt7CFYrpUaL99biOiwTAjz9fQn2p9MFSIgml_xR" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14259,7 +14259,7 @@ a.anchor-link {
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
@@ -14302,7 +14302,11 @@ table {align:left;display:block}
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="We-Rate-Dogs-Report">We Rate Dogs Report<a class="anchor-link" href="#We-Rate-Dogs-Report">&#182;</a></h1><p>This report describes gained insights about the top dog breeds rated by <a href="https://twitter.com/dog_rates9">WeRateDogs</a>. 
-The report is based on the analysis of data a WeRateDogs Twitter archive and the information about the predicted breed of dog present in each tweets imaged according to a neural network. Additionally, the Twitter API was used to determine the number of retweet and favorites (likes) of each tweet.</p>
+The report is based on the analysis of data a WeRateDogs Twitter archive and the information about the predicted breed of dog present in each tweets image according to a neural network. Additionally, the Twitter API was used to determine the number of retweet and favorites (likes) of each tweet.</p>
+<p>WeRateDogs is using a very unique rating system which is a big part of it's popularity. That's why rating numerators are greater than the denominators and there is not fix range of allowed numerators and denominators. To compare the tweets using the rating, rating was normalized by dividing the numerators by the denominators.</p>
+<p>The following illustration shows the <strong>Top 3 Rated Dog Tweets</strong>. For each of those tweets, additional characteristics are shown belowed the picture, i.e. the Tweets text, predicted dog breed inclusive the confidence and Retweet Count.
+<img src="top_3_rated_dogs.png" alt=""></p>
+<p>With regards to determining the following dog breed insights only tweets for which a rating exists, the dog breed could be predicted and the confidence was at least 30% were considered.</p>
 <p><strong>The Top 10 dog breeds most times rated are</strong></p>
 <table>
 <thead><tr>
@@ -14315,17 +14319,17 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 <tr>
 <td>1</td>
 <td>Golden Retriever</td>
-<td>124</td>
+<td>126</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Pembroke</td>
-<td>84</td>
+<td>Labrador Retriever</td>
+<td>85</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Labrador Retriever</td>
-<td>82</td>
+<td>Pembroke</td>
+<td>84</td>
 </tr>
 <tr>
 <td>4</td>
@@ -14339,13 +14343,13 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 </tr>
 <tr>
 <td>6</td>
-<td>Samoyed</td>
+<td>Pomeranian</td>
 <td>36</td>
 </tr>
 <tr>
 <td>7</td>
-<td>Pomeranian</td>
-<td>35</td>
+<td>Samoyed</td>
+<td>36</td>
 </tr>
 <tr>
 <td>8</td>
@@ -14374,59 +14378,59 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 </thead>
 <tbody>
 <tr>
-<td> 1</td>
-<td>Standard Schnauzer</td>
 <td>1</td>
-</tr>
-<tr>
-<td> 2</td>
-<td>Toy Terrier</td>
-<td>1</td>
-</tr>
-<tr>
-<td> 3</td>
-<td>Japanese Spaniel</td>
-<td>1</td>
-</tr>
-<tr>
-<td> 4</td>
-<td>Silky Terrier</td>
-<td>1</td>
-</tr>
-<tr>
-<td> 5</td>
-<td>Cairn</td>
-<td>1</td>
-</tr>
-<tr>
-<td> 6</td>
 <td>Afghan Hound</td>
 <td>1</td>
 </tr>
 <tr>
-<td> 7</td>
-<td>Groenendael</td>
-<td>1</td>
-</tr>
-<tr>
-<td> 8</td>
+<td>2</td>
 <td>Entlebucher</td>
 <td>1</td>
 </tr>
 <tr>
-<td> 9</td>
-<td>Wire Haired Fox Terrier</td>
+<td>3</td>
+<td>Clumber</td>
 <td>1</td>
 </tr>
 <tr>
-<td> 10</td>
+<td>4</td>
+<td>Cairn</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Silky Terrier</td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Japanese Spaniel</td>
+<td>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Standard Schnauzer</td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Toy Terrier</td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Groenendael</td>
+<td>1</td>
+</tr>
+<tr>
+<td>10</td>
 <td>Australian Terrier</td>
 <td>1</td>
 </tr>
 </tbody>
 </table>
 <p><br><strong>Top 3 rated dog breeds</strong>
-<br>The highest rating <em>14/10</em> was awarded to <em>17</em> dog tweets. The top 3 dog breeds most often awarded with the highest rating are.</p>
+<br> The highest normalized rating <em>1.4</em> was awarded to <em>18</em> dog tweets. The top 3 dog breeds most often awarded with the highest rating are.</p>
 <table>
 <thead><tr>
 <th>Rank</th>
@@ -14437,13 +14441,13 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 <tbody>
 <tr>
 <td>1</td>
-<td>Pembroke</td>
+<td>Golden Retriever</td>
 <td>3</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Golden Retriever</td>
-<td>2</td>
+<td>Pembroke</td>
+<td>3</td>
 </tr>
 <tr>
 <td>3</td>
@@ -14465,19 +14469,19 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 <tr>
 <td>1</td>
 <td>Maltese Dog</td>
-<td>2</td>
+<td>0.2</td>
 <td>1</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Chihuahua</td>
-<td>3</td>
+<td>0.3</td>
 <td>1</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Pug</td>
-<td>3</td>
+<td>0.3</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -14512,7 +14516,7 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 </tr>
 </tbody>
 </table>
-<p><br><strong>Worst 3 dog breeds with highest favorite count</strong></p>
+<p><br><strong>Top 3 dog breeds with highest favorite count</strong></p>
 <table>
 <thead><tr>
 <th>Rank</th>
@@ -14542,7 +14546,7 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 </tr>
 </tbody>
 </table>
-<p><br><strong>Top 10 dog breeds with highest rating sum</strong></p>
+<p><br><strong>Top 10 dog breeds with highest normalized rating sum</strong></p>
 <table>
 <thead><tr>
 <th>Rank</th>
@@ -14554,52 +14558,52 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 <tr>
 <td>1</td>
 <td>Golden Retriever</td>
-<td>1437</td>
+<td>147.05</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Pembroke</td>
-<td>959</td>
+<td>95.90</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Labrador Retriever</td>
-<td>911</td>
+<td>94.40</td>
 </tr>
 <tr>
 <td>4</td>
 <td>Chihuahua</td>
-<td>675</td>
+<td>67.50</td>
 </tr>
 <tr>
 <td>5</td>
 <td>Pug</td>
-<td>523</td>
+<td>52.30</td>
 </tr>
 <tr>
 <td>6</td>
 <td>Samoyed</td>
-<td>422</td>
+<td>42.20</td>
 </tr>
 <tr>
 <td>7</td>
-<td>Chow</td>
-<td>395</td>
+<td>Pomeranian</td>
+<td>39.98</td>
 </tr>
 <tr>
 <td>8</td>
-<td>Pomeranian</td>
-<td>390</td>
+<td>Chow</td>
+<td>39.50</td>
 </tr>
 <tr>
 <td>9</td>
 <td>Toy Poodle</td>
-<td>367</td>
+<td>36.70</td>
 </tr>
 <tr>
 <td>10</td>
 <td>Malamute</td>
-<td>295</td>
+<td>29.50</td>
 </tr>
 </tbody>
 </table>
@@ -14615,12 +14619,12 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 <tr>
 <td>1</td>
 <td>Golden Retriever</td>
-<td>1383552</td>
+<td>1425050</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Labrador Retriever</td>
-<td>924991</td>
+<td>935434</td>
 </tr>
 <tr>
 <td>3</td>
@@ -14660,7 +14664,7 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 <tr>
 <td>10</td>
 <td>Eskimo Dog</td>
-<td>228203</td>
+<td>236257</td>
 </tr>
 </tbody>
 </table>
@@ -14676,12 +14680,12 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 <tr>
 <td>1</td>
 <td>Golden Retriever</td>
-<td>374605</td>
+<td>389331</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Labrador Retriever</td>
-<td>288413</td>
+<td>293055</td>
 </tr>
 <tr>
 <td>3</td>
@@ -14715,17 +14719,17 @@ The report is based on the analysis of data a WeRateDogs Twitter archive and the
 </tr>
 <tr>
 <td>9</td>
-<td>Cocker Spaniel</td>
-<td>76625</td>
+<td>Pomeranian</td>
+<td>78663</td>
 </tr>
 <tr>
 <td>10</td>
-<td>Pomeranian</td>
-<td>72692</td>
+<td>Cocker Spaniel</td>
+<td>76625</td>
 </tr>
 </tbody>
 </table>
-<p>The following illustrations show the sum of Favorite and Retweet Counts for all Dog Breeds in the Top 10 Intersection of Favorite Count, Retweet Count and Rating sums.</p>
+<p>The following illustration shows the <strong>Favorite and Retweet Count Sums for all Dog Breeds in the Top 10 Intersection of Favorite Count, Retweet Count and Normalized Rating Sums</strong>.</p>
 <p><img src="fav_retweet_top_10_report.png" alt=""></p>
 
 </div>
